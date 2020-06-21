@@ -1,9 +1,11 @@
 import React from "react"
+import Weather from "../components/Weather"
 
 function Main() {
     return (
        <div>
-           <h1>This is the Main Page...</h1>
+           <Weather />
+            <h1>Hello</h1>
        </div>
             
         
