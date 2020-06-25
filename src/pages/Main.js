@@ -1,46 +1,77 @@
 import React from "react"
 import Weather from "../components/Weather";
-import Tide from "../components/Tide";
+import DayCards from "../components/DayCards";
 import Form from "../components/Form";
 
 const API_KEY = "c5fc998f4951203abe90d5f6c1f39d7b";
 
 class Main extends React.Component {
     state = {
-        temperature: undefined,
-        city: undefined,
-        country: undefined,
-        humidity: undefined,
-        description: undefined,
-        error: undefined
+        // temperature: undefined,
+        // city: undefined,
+        // country: undefined,
+        // humidity: undefined,
+        // description: undefined,
+        // error: undefined
+        dailyData: []
     }
     getWeather = async (e) => {
         e.preventDefault();
         const city = e.target.elements.city.value;
         const country = e.target.elements.country.value;
-        const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
+        const api_call = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${API_KEY}&units=imperial`);
+        // const api_call2 = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${API_KEY}&units=imperial`);
         const data = await api_call.json();
+        const dailyData = data.list.filter(reading => reading.dt_txt.includes("18:00:00"))
+        // const data2 = await api_call2.json();
         if (city && country) {
-            console.log(data);
+            console.log(this.state);
             this.setState({
-                temperature: data.main.temp,
-                city: data.name,
-                country: data.sys.country,
-                humidity: data.main.humidity,
-                description: data.weather[0].description,
-                error: ""
+                // temperature: data.list[0].main.temp,
+                // city: data.city.name,
+                // country: data.city.country,
+                // humidity: data.list[0].main.humidity,
+                // description: data.list[0].weather[0].description,
+                // error: ""
+                dailyData: dailyData
             });
         } else {
             this.setState({
-                temperature: undefined,
-                city: undefined,
-                country: undefined,
-                humidity: undefined,
-                description: undefined,
-                error: "Please type a value..."
+                // temperature: undefined,
+                // city: undefined,
+                // country: undefined,
+                // humidity: undefined,
+                // description: undefined,
+                // error: "Please type a value..."
+                fullData: undefined,
+                dailyData: undefined
             });
         }
+        // if (city && country) {
+        //     console.log(data2.list);
+        //     this.setState({
+        //         temperature: data.list[0].temp,
+        //         city: data2.name,
+        //         country: data2.city.country,
+        //         humidity: data2.main.humidity,
+        //         description: data2.weather.description,
+        //         error: ""
+        //     });
+        // } else {
+        //     this.setState({
+        //         temperature: undefined,
+        //         city: undefined,
+        //         country: undefined,
+        //         humidity: undefined,
+        //         description: undefined,
+        //         error: "Please type a value..."
+        //     });
+        // }
     }
+
+    formatDayCards = () => {
+        return this.state.dailyData.map((reading, index) => <DayCards reading={reading} key={index} />)
+      }
     render() {
         return (
             <div>
@@ -53,8 +84,9 @@ class Main extends React.Component {
                     description={this.state.description}
                     error={this.state.error}
                 />
-                <Tide />
+                {this.formatDayCards()}
                 
+
             </div>
 
 
