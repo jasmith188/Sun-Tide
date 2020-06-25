@@ -7,12 +7,12 @@ const API_KEY = "c5fc998f4951203abe90d5f6c1f39d7b";
 
 class Main extends React.Component {
     state = {
-        // temperature: undefined,
-        // city: undefined,
-        // country: undefined,
-        // humidity: undefined,
-        // description: undefined,
-        // error: undefined
+        temperature: undefined,
+        city: undefined,
+        country: undefined,
+        humidity: undefined,
+        description: undefined,
+        error: undefined,
         dailyData: []
     }
     getWeather = async (e) => {
@@ -27,34 +27,34 @@ class Main extends React.Component {
         if (city && country) {
             console.log(this.state);
             this.setState({
-                // temperature: data.list[0].main.temp,
-                // city: data.city.name,
-                // country: data.city.country,
-                // humidity: data.list[0].main.humidity,
-                // description: data.list[0].weather[0].description,
-                // error: ""
+                temperature: data.list[0].main.temp,
+                city: data.city.name,
+                country: data.city.country,
+                humidity: data.list[0].main.humidity,
+                description: data.list[0].weather[0].description,
+                error: "",
                 dailyData: dailyData
             });
         } else {
             this.setState({
-                // temperature: undefined,
-                // city: undefined,
-                // country: undefined,
-                // humidity: undefined,
-                // description: undefined,
-                // error: "Please type a value..."
+                temperature: undefined,
+                city: undefined,
+                country: undefined,
+                humidity: undefined,
+                description: undefined,
+                error: "Please type a value...",
                 fullData: undefined,
                 dailyData: undefined
             });
         }
         // if (city && country) {
-        //     console.log(data2.list);
+        //     console.log(data.list);
         //     this.setState({
         //         temperature: data.list[0].temp,
-        //         city: data2.name,
-        //         country: data2.city.country,
-        //         humidity: data2.main.humidity,
-        //         description: data2.weather.description,
+        //         city: data.name,
+        //         country: data.city.country,
+        //         humidity: data.main.humidity,
+        //         description: data.weather.description,
         //         error: ""
         //     });
         // } else {

@@ -1,8 +1,7 @@
-
 import React from 'react';
 var moment = require('moment');
 
-const DayCards = ({ reading }) => {
+const DayCard = ({ reading }) => {
   let newDate = new Date();
   const weekday = reading.dt * 1000
   newDate.setTime(weekday)
@@ -24,4 +23,4 @@ const DayCards = ({ reading }) => {
   )
 }
 
-export default DayCards;
+export default DayCard;
