@@ -2,6 +2,7 @@ import React from "react"
 import Weather from "../components/Weather";
 import DayCards from "../components/DayCards";
 import Form from "../components/Form";
+import Tide from "../components/Tide"
 
 const API_KEY = "c5fc998f4951203abe90d5f6c1f39d7b";
 
@@ -70,11 +71,13 @@ class Main extends React.Component {
     }
 
     formatDayCards = () => {
-        return this.state.dailyData.map((reading, index) => <DayCards reading={reading} key={index} />)
+        return this.state.dailyData.map((day, index) => <DayCards day={day} key={index} />)
       }
     render() {
         return (
             <div>
+                <h1>Weather App</h1>
+                <h5 className="text-muted">Type a City and Country</h5>
                 <Form getWeather={this.getWeather} />
                 <Weather
                     temperature={this.state.temperature}
@@ -86,7 +89,7 @@ class Main extends React.Component {
                 />
                 {this.formatDayCards()}
                 
-
+                <Tide />
             </div>
 
 
