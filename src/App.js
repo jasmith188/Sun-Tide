@@ -5,6 +5,7 @@ import Form from "./components/Form";
 // import Tide from "./components/Tide"
 import "./App.css"
 import CardDeck from 'react-bootstrap/CardDeck'
+import Card from 'react-bootstrap/Card'
 
 const API_KEY = "c5fc998f4951203abe90d5f6c1f39d7b";
 
@@ -84,6 +85,7 @@ class App extends React.Component {
           <div>
           <h5>Type a City and Country</h5>
             <Form getWeather={this.getWeather} />
+            <Card>
             
               <Weather classname="current-weather"
                 temperature={this.state.temperature}
@@ -93,6 +95,7 @@ class App extends React.Component {
                 description={this.state.description}
                 error={this.state.error}
               />
+              </Card>
               </div>
               <CardDeck>
               {this.formatDayCards()}

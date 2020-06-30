@@ -1,3 +1,7 @@
+body {
+  background-color: lightblue;
+}
+
 .title {
   text-align: center;
 }
@@ -12,4 +16,9 @@
  
   .current-card {
     text-align: left;
+    
+  }
+
+  .card {
+    background-color: lightblue;
   }
