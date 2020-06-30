@@ -2,8 +2,9 @@ import React from "react"
 import Weather from "./components/Weather";
 import DayCards from "./components/DayCards";
 import Form from "./components/Form";
-import Tide from "./components/Tide"
+// import Tide from "./components/Tide"
 import "./App.css"
+import CardDeck from 'react-bootstrap/CardDeck'
 
 const API_KEY = "c5fc998f4951203abe90d5f6c1f39d7b";
 
@@ -76,15 +77,15 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="container">
 
         <h1 className="title">Weather App</h1>
         
-          <div className="jumbotron fluid">
+          <div>
           <h5>Type a City and Country</h5>
             <Form getWeather={this.getWeather} />
-            </div>
-              <Weather
+            
+              <Weather classname="current-weather"
                 temperature={this.state.temperature}
                 city={this.state.city}
                 country={this.state.country}
@@ -92,7 +93,10 @@ class App extends React.Component {
                 description={this.state.description}
                 error={this.state.error}
               />
+              </div>
+              <CardDeck>
               {this.formatDayCards()}
+              </CardDeck>
               </div>
            
        
