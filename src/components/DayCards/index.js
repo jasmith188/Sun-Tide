@@ -1,7 +1,7 @@
 import React from 'react';
 var moment = require('moment');
 
-class DayCard extends React.Component {
+class DayCards extends React.Component {
     render() {
         let newDate = new Date();
         const weekday = this.props.day.dt * 1000
@@ -26,4 +26,4 @@ class DayCard extends React.Component {
     }
 }
 
-export default DayCard;
+export default DayCards;
