@@ -12,8 +12,9 @@ class Weather extends React.Component {
 
                        
                         {this.props.temperature && <p>Current Temperature: {Math.round(this.props.temperature)}°F</p>}
+                        {this.props.feelsLike && <p>Feels Like: {Math.round(this.props.feelsLike)}°F</p>}
                         {this.props.humidity && <p>Current Humidity: {this.props.humidity}%</p>}
-                        {this.props.description && <p>Current Description: It is a {this.props.description}</p>}
+                        {this.props.description && <p>Current Description: {this.props.description}</p>}
                         {this.props.error && <p>{this.props.error} </p>}
                     </div>
                 </div>

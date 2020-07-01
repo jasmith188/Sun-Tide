@@ -16,9 +16,20 @@ class App extends React.Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
+    feelsLike: undefined,
     error: undefined,
     dailyData: []
   }
+
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(function (position) {
+        console.log("Latitude is :", position.coords.latitude);
+        console.log("Longitude is :", position.coords.longitude);
+        console.log(position);
+
+
+    });
+}
   getWeather = async (e) => {
     e.preventDefault();
     const city = e.target.elements.city.value;
@@ -36,6 +47,7 @@ class App extends React.Component {
         country: data.city.country,
         humidity: data.list[0].main.humidity,
         description: data.list[0].weather[0].description,
+        feelsLike: data.list[0].main.feels_like,
         error: "",
         dailyData: dailyData
       });
@@ -46,6 +58,7 @@ class App extends React.Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
+        feelsLike: undefined,
         error: "Please type a value...",
         fullData: undefined,
         dailyData: undefined
@@ -93,6 +106,7 @@ class App extends React.Component {
                 country={this.state.country}
                 humidity={this.state.humidity}
                 description={this.state.description}
+                feelsLike={this.state.feelsLike}
                 error={this.state.error}
               />
               </Card>
