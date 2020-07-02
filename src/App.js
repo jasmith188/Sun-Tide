@@ -64,26 +64,6 @@ class App extends React.Component {
         dailyData: undefined
       });
     }
-    // if (city && country) {
-    //     console.log(data.list);
-    //     this.setState({
-    //         temperature: data.list[0].temp,
-    //         city: data.name,
-    //         country: data.city.country,
-    //         humidity: data.main.humidity,
-    //         description: data.weather.description,
-    //         error: ""
-    //     });
-    // } else {
-    //     this.setState({
-    //         temperature: undefined,
-    //         city: undefined,
-    //         country: undefined,
-    //         humidity: undefined,
-    //         description: undefined,
-    //         error: "Please type a value..."
-    //     });
-    // }
   }
 
   formatDayCards = () => {
@@ -122,12 +102,6 @@ class App extends React.Component {
           {this.formatDayCards()}
         </CardDeck>
       </div>
-
-
-
-
-
-
     )
   }
 }
