@@ -92,14 +92,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-
-        <h1 className="title">Weather App</h1>
-
+        <div className="title">Weather App</div>
+        <br />
+        <div className="sub-title">Get Your Current & 5 Day Forecast</div>
+        <br />
+        <br />
         <div>
-          <h5>Type a City and Country</h5>
+          {/* <div className="top-form">Type a City and Country</div> */}
           <Form getWeather={this.getWeather} />
+          <br />
+          <br />
           <Card>
-
             <Weather classname="current-weather"
               temperature={this.state.temperature}
               city={this.state.city}
@@ -111,14 +114,13 @@ class App extends React.Component {
             />
           </Card>
         </div>
+        <br />
+        <br />
         <CardDeck>
           {this.formatDayCards()}
         </CardDeck>
-
-        <div>
-          {/* <Tide /> */}
-        </div>
       </div>
+
 
 
 
