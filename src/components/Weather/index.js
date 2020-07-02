@@ -7,10 +7,10 @@ class Weather extends React.Component {
         return (
             <div>
                 <div className="current-weather">
-                <h2>{this.props.city && this.props.country && <p>Location: {this.props.city}, {this.props.country}</p>}</h2>
+                    <h2>{this.props.city && this.props.country && <p>Location: {this.props.city}, {this.props.country}</p>}</h2>
                     <div className="current-card">
 
-                       
+
                         {this.props.temperature && <p>Current Temperature: {Math.round(this.props.temperature)}°F</p>}
                         {this.props.feelsLike && <p>Feels Like: {Math.round(this.props.feelsLike)}°F</p>}
                         {this.props.humidity && <p>Current Humidity: {this.props.humidity}%</p>}

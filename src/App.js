@@ -23,13 +23,13 @@ class App extends React.Component {
 
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(function (position) {
-        console.log("Latitude is :", position.coords.latitude);
-        console.log("Longitude is :", position.coords.longitude);
-        console.log(position);
+      console.log("Latitude is :", position.coords.latitude);
+      console.log("Longitude is :", position.coords.longitude);
+      console.log(position);
 
 
     });
-}
+  }
   getWeather = async (e) => {
     e.preventDefault();
     const city = e.target.elements.city.value;
@@ -94,30 +94,34 @@ class App extends React.Component {
       <div className="container">
 
         <h1 className="title">Weather App</h1>
-        
-          <div>
+
+        <div>
           <h5>Type a City and Country</h5>
-            <Form getWeather={this.getWeather} />
-            <Card>
-            
-              <Weather classname="current-weather"
-                temperature={this.state.temperature}
-                city={this.state.city}
-                country={this.state.country}
-                humidity={this.state.humidity}
-                description={this.state.description}
-                feelsLike={this.state.feelsLike}
-                error={this.state.error}
-              />
-              </Card>
-              </div>
-              <CardDeck>
-              {this.formatDayCards()}
-              </CardDeck>
-              </div>
-           
-       
-      
+          <Form getWeather={this.getWeather} />
+          <Card>
+
+            <Weather classname="current-weather"
+              temperature={this.state.temperature}
+              city={this.state.city}
+              country={this.state.country}
+              humidity={this.state.humidity}
+              description={this.state.description}
+              feelsLike={this.state.feelsLike}
+              error={this.state.error}
+            />
+          </Card>
+        </div>
+        <CardDeck>
+          {this.formatDayCards()}
+        </CardDeck>
+
+        <div>
+          {/* <Tide /> */}
+        </div>
+      </div>
+
+
+
 
 
     )

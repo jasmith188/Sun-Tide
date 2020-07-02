@@ -1,32 +1,21 @@
 import React from "react"
+import { usePosition } from 'usePosition';
 
 
-
-class Tide extends React.Component {
-   
-
-    
+export const Tide = () => {
 
 
-componentDidMount() {
-    navigator.geolocation.getCurrentPosition(function (position) {
-        console.log("Latitude is :", position.coords.latitude);
-        console.log("Longitude is :", position.coords.longitude);
-        console.log(position);
+    const { latitude, longitude, error } = usePosition();
+    console.log(usePosition);
 
-
-    });
-}
-
-
-render() {
     return (
-
-        <div>
-            <h1>this is data</h1>
-        </div>
-    )
+        <code>
+            latitude: {latitude}<br />
+      longitude: {longitude}<br />
+      error: {error}
+        </code>
+    );
 }
-}
 
-export default Tide;
+export default Tide
+
