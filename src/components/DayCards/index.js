@@ -15,12 +15,12 @@ class DayCards extends React.Component {
           <div className="card">
 
             <h3 className="card-title">{moment(newDate).format('dddd')}</h3>
-            <p className="text-muted">{moment(newDate).format('MMMM Do, h:mm a')}</p>
+            <p className="text">{moment(newDate).format('MMMM Do, h:mm a')}</p>
             <i className={imgURL}></i>
-            <h2>{Math.round(this.props.day.main.temp)} °F</h2>
+            <h1>{Math.round(this.props.day.main.temp)}°F</h1>
+            <h5>Feels Like: {Math.round(this.props.day.main.feels_like)}°F</h5>
             <div className="card-body">
               <p className="card-text">{this.props.day.weather[0].description}</p>
-              {/* <button className="btn btn-dark btn-outline-light">See Hourly Forecast</button> */}
             </div>
           </div>
         </div>

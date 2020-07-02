@@ -21,14 +21,14 @@ class App extends React.Component {
     dailyData: []
   }
 
-  componentDidMount() {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      console.log("Latitude is :", position.coords.latitude);
-      console.log("Longitude is :", position.coords.longitude);
-      console.log(position);
+  // componentDidMount() {
+  //   navigator.geolocation.getCurrentPosition(function (position) {
+  //     console.log("Latitude is :", position.coords.latitude);
+  //     console.log("Longitude is :", position.coords.longitude);
+  //     console.log(position);
 
 
-    });
+  //   });
   }
   getWeather = async (e) => {
     e.preventDefault();
@@ -92,9 +92,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
+        <div className="jumbotron">
         <div className="title">Weather App</div>
         <br />
         <div className="sub-title">Get Your Current & 5 Day Forecast</div>
+        </div>
         <br />
         <br />
         <div>

@@ -3,6 +3,16 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.jumbotron {
+  background-color: lightgreen;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: black;
+  border-style: solid;
+
+}
+
 .title {
   text-align: center;
   font-size: 40px;
