@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Sun-Tide/precache-manifest.c93463f2ea3086991cc69c33936eb131.js"
+  "/Sun-Tide/precache-manifest.2c17ad06b9e326423269dabcdb8c6d3e.js"
 );
 
 self.addEventListener('message', (event) => {

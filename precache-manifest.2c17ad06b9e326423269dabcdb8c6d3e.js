@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "867944b64b917e029eeb4dab0d366a52",
+    "revision": "03d9d2dc3cd649369c4eecb406bdd2de",
     "url": "/Sun-Tide/index.html"
   },
   {
-    "revision": "a9aeabfa7ac5ba0e9ffc",
-    "url": "/Sun-Tide/static/css/main.2e3c44b3.chunk.css"
+    "revision": "076c714b17ff0ece1a3a",
+    "url": "/Sun-Tide/static/css/main.4f3bd2a0.chunk.css"
   },
   {
     "revision": "450625e505f9adab05d3",
@@ -16,11 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sun-Tide/static/js/2.95bd49cd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a9aeabfa7ac5ba0e9ffc",
+    "revision": "076c714b17ff0ece1a3a",
     "url": "/Sun-Tide/static/js/main.f0768c5f.chunk.js"
   },
   {
     "revision": "d50a97670db2277fe3f5",
     "url": "/Sun-Tide/static/js/runtime-main.8dc59073.js"
+  },
+  {
+    "revision": "e4f16078704a9b7f3dd474b62a53c9fe",
+    "url": "/Sun-Tide/static/media/storm.e4f16078.jpg"
   }
 ]);
