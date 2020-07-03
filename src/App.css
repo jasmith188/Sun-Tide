@@ -1,9 +1,9 @@
 body {
   background-image: url("./images/storm.jpg");
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   /* background-position: center; */
-  /* background-attachment: fixed; */
-  background-size: 1700px;
+  background-size: cover;
+  
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
   
