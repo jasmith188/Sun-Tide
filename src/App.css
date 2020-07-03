@@ -1,11 +1,15 @@
 body {
   background-image: url("./images/storm.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  /* background-position: center; */
+  /* background-attachment: fixed; */
   background-size: 1700px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
 }
 
 .jumbotron {
