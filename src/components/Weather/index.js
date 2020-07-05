@@ -1,26 +1,27 @@
 import React from "react"
 import "../../App.css"
 
-class Weather extends React.Component {
-
-    render() {
-        return (
-            <div>
+const Weather = (props) => (
+<div>
                 <div className="current-weather">
-                    <h2>{this.props.city && this.props.country && <p>Location: {this.props.city}, {this.props.country}</p>}</h2>
+                    <h2>{props.city && props.country && <p>Location: {props.city}, {props.country}</p>}</h2>
                     <div className="current-card">
 
 
-                        {this.props.temperature && <p>Current Temperature: {Math.round(this.props.temperature)}°F</p>}
-                        {this.props.feelsLike && <p>Feels Like: {Math.round(this.props.feelsLike)}°F</p>}
-                        {this.props.humidity && <p>Current Humidity: {this.props.humidity}%</p>}
-                        {this.props.description && <p>Current Description: {this.props.description}</p>}
-                        {this.props.error && <p>{this.props.error} </p>}
+                        {props.temperature && <p>Current Temperature: {Math.round(props.temperature)}°F</p>}
+                        {props.feelsLike && <p>Feels Like: {Math.round(props.feelsLike)}°F</p>}
+                        {props.humidity && <p>Current Humidity: {props.humidity}%</p>}
+                        {props.description && <p>Current Description: {props.description}</p>}
+                        {props.icon && <p>icon here:{props.icon}</p>}
+                        {props.error && <p>{this.props.error} </p>}
                     </div>
                 </div>
             </div>
-        )
-    }
-}
+);
 
-export default Weather
+            
+        
+    
+
+
+export default Weather;

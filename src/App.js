@@ -48,6 +48,7 @@ class App extends React.Component {
         humidity: data.list[0].main.humidity,
         description: data.list[0].weather[0].description,
         feelsLike: data.list[0].main.feels_like,
+        icon: data.list[0].weather[0].icon,
         error: "",
         dailyData: dailyData
       });
@@ -59,6 +60,7 @@ class App extends React.Component {
         humidity: undefined,
         description: undefined,
         feelsLike: undefined,
+        icon: undefined,
         error: "Please type a value...",
         fullData: undefined,
         dailyData: undefined
@@ -72,19 +74,23 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="jumbotron">
-        <div className="title">Weather App</div>
-        <br />
-        <div className="sub-title">Get Your Current & 5 Day Forecast</div>
+        <div className="title-card">
+          <div className="title">Weather App</div>
+          <br />
+          <div className="sub-title">Get Your Current & 5 Day Forecast</div>
         </div>
         <br />
         <br />
-        <div>
+        <div className="top-form">
           {/* <div className="top-form">Type a City and Country</div> */}
+          <div className="row">
+            <div className="col-lg-6">
           <Form getWeather={this.getWeather} />
+          </div>
           <br />
           <br />
-          <Card>
+          <div className="col-lg-6">
+          <Card className="current-weather-card">
             <Weather classname="current-weather"
               temperature={this.state.temperature}
               city={this.state.city}
@@ -92,9 +98,12 @@ class App extends React.Component {
               humidity={this.state.humidity}
               description={this.state.description}
               feelsLike={this.state.feelsLike}
+              icon={this.state.icon}
               error={this.state.error}
             />
           </Card>
+          </div>
+          </div>
         </div>
         <br />
         <br />
