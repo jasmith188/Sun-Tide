@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/Sun-Tide/static/css/main.4404ee1e.chunk.css",
-    "main.js": "/Sun-Tide/static/js/main.f0768c5f.chunk.js",
-    "main.js.map": "/Sun-Tide/static/js/main.f0768c5f.chunk.js.map",
+    "main.css": "/Sun-Tide/static/css/main.66d6f06f.chunk.css",
+    "main.js": "/Sun-Tide/static/js/main.14c50132.chunk.js",
+    "main.js.map": "/Sun-Tide/static/js/main.14c50132.chunk.js.map",
     "runtime-main.js": "/Sun-Tide/static/js/runtime-main.8dc59073.js",
     "runtime-main.js.map": "/Sun-Tide/static/js/runtime-main.8dc59073.js.map",
-    "static/js/2.95bd49cd.chunk.js": "/Sun-Tide/static/js/2.95bd49cd.chunk.js",
-    "static/js/2.95bd49cd.chunk.js.map": "/Sun-Tide/static/js/2.95bd49cd.chunk.js.map",
+    "static/js/2.24c191a7.chunk.js": "/Sun-Tide/static/js/2.24c191a7.chunk.js",
+    "static/js/2.24c191a7.chunk.js.map": "/Sun-Tide/static/js/2.24c191a7.chunk.js.map",
     "index.html": "/Sun-Tide/index.html",
-    "precache-manifest.b5f4bfe20ab77ab5ceac29b3524abd9b.js": "/Sun-Tide/precache-manifest.b5f4bfe20ab77ab5ceac29b3524abd9b.js",
+    "precache-manifest.7c64a3c3ca3a4f6379cfb370141e09aa.js": "/Sun-Tide/precache-manifest.7c64a3c3ca3a4f6379cfb370141e09aa.js",
     "service-worker.js": "/Sun-Tide/service-worker.js",
-    "static/css/main.4404ee1e.chunk.css.map": "/Sun-Tide/static/css/main.4404ee1e.chunk.css.map",
-    "static/js/2.95bd49cd.chunk.js.LICENSE.txt": "/Sun-Tide/static/js/2.95bd49cd.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/Sun-Tide/static/media/storm.e4f16078.jpg"
+    "static/css/main.66d6f06f.chunk.css.map": "/Sun-Tide/static/css/main.66d6f06f.chunk.css.map",
+    "static/js/2.24c191a7.chunk.js.LICENSE.txt": "/Sun-Tide/static/js/2.24c191a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8dc59073.js",
-    "static/js/2.95bd49cd.chunk.js",
-    "static/css/main.4404ee1e.chunk.css",
-    "static/js/main.f0768c5f.chunk.js"
+    "static/js/2.24c191a7.chunk.js",
+    "static/css/main.66d6f06f.chunk.css",
+    "static/js/main.14c50132.chunk.js"
   ]
 }
