@@ -21,4 +21,4 @@ Jimmy Smith
 ## Demo
 [Click here to check out this application](http://jasmith188.github.io/Sun-Tide/)
 <br>
-<img src="" title+"" alt="" />
+<img src="./suntide.png" title="suntide" alt="app" />
