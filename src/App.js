@@ -21,20 +21,12 @@ class App extends React.Component {
     dailyData: []
   }
 
-  // componentDidMount() {
-  //   navigator.geolocation.getCurrentPosition(function (position) {
-  //     console.log("Latitude is :", position.coords.latitude);
-  //     console.log("Longitude is :", position.coords.longitude);
-  //     console.log(position);
-
-
-  //   });
-  // }
+  
   getWeather = async (e) => {
     e.preventDefault();
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
-    const api_call = await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${API_KEY}&units=imperial`);
+    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${API_KEY}&units=imperial`);
     // const api_call2 = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${API_KEY}&units=imperial`);
     const data = await api_call.json();
     const dailyData = data.list.filter(reading => reading.dt_txt.includes("18:00:00"))
@@ -48,7 +40,7 @@ class App extends React.Component {
         humidity: data.list[0].main.humidity,
         description: data.list[0].weather[0].description,
         feelsLike: data.list[0].main.feels_like,
-        icon: data.list[0].weather[0].icon,
+        // icon: data.list[0].weather[0].icon,
         error: "",
         dailyData: dailyData
       });
@@ -60,7 +52,7 @@ class App extends React.Component {
         humidity: undefined,
         description: undefined,
         feelsLike: undefined,
-        icon: undefined,
+        // icon: undefined,
         error: "Please type a value...",
         fullData: undefined,
         dailyData: undefined
@@ -75,9 +67,11 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="title-card">
-          <div className="title">Weather App</div>
+          <div className="title">Sun Tide</div>
           <br />
           <div className="sub-title">Get Your Current & 5 Day Forecast</div>
+          <br />
+        <br />
         </div>
         <br />
         <br />
@@ -98,7 +92,7 @@ class App extends React.Component {
               humidity={this.state.humidity}
               description={this.state.description}
               feelsLike={this.state.feelsLike}
-              icon={this.state.icon}
+              // icon={this.state.icon}
               error={this.state.error}
             />
           </Card>
@@ -110,6 +104,7 @@ class App extends React.Component {
         <CardDeck>
           {this.formatDayCards()}
         </CardDeck>
+        {/* <Tide /> */}
       </div>
     )
   }
