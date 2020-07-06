@@ -11,13 +11,13 @@ const API_KEY = "c5fc998f4951203abe90d5f6c1f39d7b";
 
 class App extends React.Component {
   state = {
-    temperature: undefined,
-    city: undefined,
-    country: undefined,
-    humidity: undefined,
-    description: undefined,
-    feelsLike: undefined,
-    error: undefined,
+    // temperature: undefined,
+    // city: undefined,
+    // country: undefined,
+    // humidity: undefined,
+    // description: undefined,
+    // feelsLike: undefined,
+    // error: undefined,
     dailyData: []
   }
 
