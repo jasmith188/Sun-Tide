@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Sun-Tide/static/css/main.53b59451.chunk.css",
-    "main.js": "/Sun-Tide/static/js/main.6dedc845.chunk.js",
-    "main.js.map": "/Sun-Tide/static/js/main.6dedc845.chunk.js.map",
+    "main.js": "/Sun-Tide/static/js/main.ada144fe.chunk.js",
+    "main.js.map": "/Sun-Tide/static/js/main.ada144fe.chunk.js.map",
     "runtime-main.js": "/Sun-Tide/static/js/runtime-main.8dc59073.js",
     "runtime-main.js.map": "/Sun-Tide/static/js/runtime-main.8dc59073.js.map",
     "static/js/2.24c191a7.chunk.js": "/Sun-Tide/static/js/2.24c191a7.chunk.js",
     "static/js/2.24c191a7.chunk.js.map": "/Sun-Tide/static/js/2.24c191a7.chunk.js.map",
     "index.html": "/Sun-Tide/index.html",
-    "precache-manifest.dd357273c82d9a331deabe0db5022ec8.js": "/Sun-Tide/precache-manifest.dd357273c82d9a331deabe0db5022ec8.js",
+    "precache-manifest.91aef9cbff2d0f800416b6d45e170d8c.js": "/Sun-Tide/precache-manifest.91aef9cbff2d0f800416b6d45e170d8c.js",
     "service-worker.js": "/Sun-Tide/service-worker.js",
     "static/css/main.53b59451.chunk.css.map": "/Sun-Tide/static/css/main.53b59451.chunk.css.map",
     "static/js/2.24c191a7.chunk.js.LICENSE.txt": "/Sun-Tide/static/js/2.24c191a7.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8dc59073.js",
     "static/js/2.24c191a7.chunk.js",
     "static/css/main.53b59451.chunk.css",
-    "static/js/main.6dedc845.chunk.js"
+    "static/js/main.ada144fe.chunk.js"
   ]
 }
