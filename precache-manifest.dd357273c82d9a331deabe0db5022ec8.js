@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "919e7cd5878da4f39159238094e55f4c",
+    "revision": "db681fd08ff5e553f0653fb9a2f73cbc",
     "url": "/Sun-Tide/index.html"
   },
   {
-    "revision": "ab9c6284e40a479d772e",
-    "url": "/Sun-Tide/static/css/main.b8a5037b.chunk.css"
+    "revision": "da910f3d4db53ad20b04",
+    "url": "/Sun-Tide/static/css/main.53b59451.chunk.css"
   },
   {
     "revision": "0cbe9c5d08d211e79334",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Sun-Tide/static/js/2.24c191a7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ab9c6284e40a479d772e",
+    "revision": "da910f3d4db53ad20b04",
     "url": "/Sun-Tide/static/js/main.6dedc845.chunk.js"
   },
   {
