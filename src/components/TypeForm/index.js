@@ -11,8 +11,10 @@ class TypeForm extends React.Component {
              <Form.Group controlId="formBasicEmail">
                 <form onSubmit={this.props.getWeather}>
                 <Form.Label>Enter a City  </Form.Label>
-                <Form.Control type="email" placeholder="City" />
+                <br/>
                     <input type="text" name="city"/>
+                    <br/>
+                    <Form.Label>Select a Country </Form.Label>
                     {/* <input type="text" name="country" placeholder="Country" /> */}
                     <Form.Control as="select" id="country">
                             <option>United States</option>
@@ -21,7 +23,7 @@ class TypeForm extends React.Component {
                             <option>France</option>
                             <option>Spain</option>
                         </Form.Control>
-                    
+                    <br />
                     <button>Get Weather</button>
                 </form>
                 </Form.Group>

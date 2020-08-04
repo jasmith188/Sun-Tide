@@ -89,7 +89,7 @@ class App extends React.Component {
           </div>
           <br />
           <br />
-          <div className="col-lg-6">
+          <div className="fiveday">
           <Card className="current-weather-card">
             <Weather classname="current-weather"
               temperature={this.state.temperature}
