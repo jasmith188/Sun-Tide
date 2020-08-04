@@ -19,6 +19,6 @@ Jimmy Smith
 -Add High and Low Tides by search 
 
 ## Demo
-[Click here to check out this application](http://jasmith188.github.io/Sun-Tide/)
+[Click here to check out this application](http://jasmith188.github.io/WeatherToday/)
 <br>
 <img src="./suntide.png" title="suntide" alt="app" />
