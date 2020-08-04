@@ -1,6 +1,6 @@
 {
   "homepage": "https://jasmith188.github.io/WeatherToday/",
-  "name": "sun-tide",
+  "name": "weathertoday",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

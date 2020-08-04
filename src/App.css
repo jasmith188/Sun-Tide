@@ -26,10 +26,10 @@ body {
 
 .title {
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
   color: yellow;
   padding-top: 50px;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Bungee', cursive;
 
 }
 
@@ -76,6 +76,10 @@ body {
   
   .form {
     text-align: center;
+  }
+
+  .form-label {
+    color: white;
   }
 
   .top-form {
