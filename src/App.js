@@ -1,11 +1,13 @@
 import React from "react"
 import Weather from "./components/Weather";
 import DayCards from "./components/DayCards";
-import Form from "./components/Form";
+import TypeForm from "./components/TypeForm";
 // import Tide from "./components/Tide"
 import "./App.css"
 import CardDeck from 'react-bootstrap/CardDeck'
 import Card from 'react-bootstrap/Card'
+import Image from 'react-bootstrap/Image'
+import Image1 from "./images/images.png"
 
 const API_KEY = "c5fc998f4951203abe90d5f6c1f39d7b";
 
@@ -67,19 +69,23 @@ class App extends React.Component {
     return (
       <div className="container">
         <div className="title-card">
-          <div className="title">Sun Tide</div>
+          <div className="title">WeatherToday</div>
           <br />
           <div className="sub-title">Get Your Current & 5 Day Forecast</div>
           <br />
         <br />
+        <div className="image">
+        <Image className="suncloud" src={Image1} alt={"Error"} height="200px" width="200px" />
+        </div>
+        
         </div>
         <br />
         <br />
         <div className="top-form">
           {/* <div className="top-form">Type a City and Country</div> */}
-          <div className="row">
-            <div className="col-lg-6">
-          <Form getWeather={this.getWeather} />
+          
+            <div className="form" >
+          <TypeForm getWeather={this.getWeather} />
           </div>
           <br />
           <br />
@@ -97,7 +103,7 @@ class App extends React.Component {
             />
           </Card>
           </div>
-          </div>
+          
         </div>
         <br />
         <br />

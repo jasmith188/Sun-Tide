@@ -68,6 +68,10 @@ body {
     padding: 10px 10px 10px 10px;
     margin: 10px 10px 10px 10px;
   }
+  
+  .form {
+    text-align: center;
+  }
 
   .top-form {
     text-align: center;
@@ -104,4 +108,8 @@ body {
   
   .button {
     border-radius: 10px, 10px, 10px 10px;
+  }
+
+  .image {
+    text-align: center;
   }

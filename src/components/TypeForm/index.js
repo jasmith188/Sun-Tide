@@ -1,29 +1,34 @@
 import React from "react";
 import "../../App.css"
+import Form from 'react-bootstrap/Form'
 // import DropdownButton from 'react-bootstrap/DropdownButton'
 // import Dropdown from 'react-bootstrap/Dropdown'
 
-class Form extends React.Component {
+class TypeForm extends React.Component {
     render() {
         return (
-            <div className="form">
+          <Form>
+             <Form.Group controlId="formBasicEmail">
                 <form onSubmit={this.props.getWeather}>
-                    <input type="text" name="city" placeholder="City" />
+                <Form.Label>Enter a City  </Form.Label>
+                <Form.Control type="email" placeholder="City" />
+                    <input type="text" name="city"/>
                     {/* <input type="text" name="country" placeholder="Country" /> */}
-                        <select className="form-control" id="country">
+                    <Form.Control as="select" id="country">
                             <option>United States</option>
                             <option>Germany</option>
                             <option>Mexico</option>
                             <option>France</option>
                             <option>Spain</option>
-                        </select>
+                        </Form.Control>
                     
                     <button>Get Weather</button>
                 </form>
-            </div>
+                </Form.Group>
+            </Form>
         )
 
     }
 };
 
-export default Form
+export default TypeForm
