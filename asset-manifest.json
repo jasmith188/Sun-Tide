@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Sun-Tide/static/css/main.53b59451.chunk.css",
-    "main.js": "/Sun-Tide/static/js/main.ada144fe.chunk.js",
-    "main.js.map": "/Sun-Tide/static/js/main.ada144fe.chunk.js.map",
-    "runtime-main.js": "/Sun-Tide/static/js/runtime-main.8dc59073.js",
-    "runtime-main.js.map": "/Sun-Tide/static/js/runtime-main.8dc59073.js.map",
-    "static/js/2.24c191a7.chunk.js": "/Sun-Tide/static/js/2.24c191a7.chunk.js",
-    "static/js/2.24c191a7.chunk.js.map": "/Sun-Tide/static/js/2.24c191a7.chunk.js.map",
-    "index.html": "/Sun-Tide/index.html",
-    "precache-manifest.91aef9cbff2d0f800416b6d45e170d8c.js": "/Sun-Tide/precache-manifest.91aef9cbff2d0f800416b6d45e170d8c.js",
-    "service-worker.js": "/Sun-Tide/service-worker.js",
-    "static/css/main.53b59451.chunk.css.map": "/Sun-Tide/static/css/main.53b59451.chunk.css.map",
-    "static/js/2.24c191a7.chunk.js.LICENSE.txt": "/Sun-Tide/static/js/2.24c191a7.chunk.js.LICENSE.txt"
+    "main.css": "/WeatherToday/static/css/main.2efb5943.chunk.css",
+    "main.js": "/WeatherToday/static/js/main.0c886b66.chunk.js",
+    "main.js.map": "/WeatherToday/static/js/main.0c886b66.chunk.js.map",
+    "runtime-main.js": "/WeatherToday/static/js/runtime-main.364e5ec5.js",
+    "runtime-main.js.map": "/WeatherToday/static/js/runtime-main.364e5ec5.js.map",
+    "static/js/2.2faaefca.chunk.js": "/WeatherToday/static/js/2.2faaefca.chunk.js",
+    "static/js/2.2faaefca.chunk.js.map": "/WeatherToday/static/js/2.2faaefca.chunk.js.map",
+    "index.html": "/WeatherToday/index.html",
+    "precache-manifest.8dac5ab3fb6679b852c863b743f77673.js": "/WeatherToday/precache-manifest.8dac5ab3fb6679b852c863b743f77673.js",
+    "service-worker.js": "/WeatherToday/service-worker.js",
+    "static/css/main.2efb5943.chunk.css.map": "/WeatherToday/static/css/main.2efb5943.chunk.css.map",
+    "static/js/2.2faaefca.chunk.js.LICENSE.txt": "/WeatherToday/static/js/2.2faaefca.chunk.js.LICENSE.txt",
+    "static/media/images.png": "/WeatherToday/static/media/images.6fbc4321.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8dc59073.js",
-    "static/js/2.24c191a7.chunk.js",
-    "static/css/main.53b59451.chunk.css",
-    "static/js/main.ada144fe.chunk.js"
+    "static/js/runtime-main.364e5ec5.js",
+    "static/js/2.2faaefca.chunk.js",
+    "static/css/main.2efb5943.chunk.css",
+    "static/js/main.0c886b66.chunk.js"
   ]
 }
