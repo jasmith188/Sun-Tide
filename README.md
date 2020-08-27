@@ -15,9 +15,6 @@ This application was made to help practice my React skills
 
 Jimmy Smith 
 
-## Future Ideas
--Add High and Low Tides by search 
-
 ## Demo
 [Click here to check out this application](http://jasmith188.github.io/WeatherToday/)
 <br>
