@@ -1,4 +1,4 @@
-# Sun-Tide
+# WeatherToday
 
 ## Overview
 As a user, I want to be able to check the current and 5 day weather with a search of City and Country
